@@ -1,0 +1,19 @@
+<?php
+    //別画面からのPOSTデータを各変数に代入
+      $postDate1=$_POST['leftCard'];
+      $postDate2=$_POST['select'];
+?>
+   <html>
+	<head>
+		<meta http-equiv="Content-Type"content="text/html;charset=UTF-8">
+		<div align="center">
+	<font size="6">High＆Lowゲーム</font>
+<HR ="1">
+	</head>
+	<body>
+	<?php
+		echo"送信カード番号:{$postDate1}<br>\n";
+		echo"High/Low選択:{$postDate2}<br>\n";
+      ?>
+      </body>
+</html>
