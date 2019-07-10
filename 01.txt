@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type"content="text/html;charset=UTF-8">
+		<div align="center">
+	<font size="6">High＆Lowゲーム</font>
+<HR ="1">
+	</head>
+	<body>
+		<?php
+		//繰り返し処理を行いランダムな数値を配列に格納
+		$leftCard1=mt_rand(0,13);  //関数を利用して0～13のランダム数値を1つ取得
+
+	echo"ランダム数値:.$leftCard1.";
+      ?>
+      </body>
+      </div>
+ </html>
