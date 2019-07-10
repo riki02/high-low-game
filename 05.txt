@@ -1,0 +1,32 @@
+<?php
+	    //別画面からのPOSTデータを各変数に代入
+	    $postDate1=$_POST['leftCard'];
+	    $postDate2=$_POST['select'];
+	  ?>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type"content="text/html;charset=UTF-8">
+		<div align="center">
+	<font size="6">High＆Lowゲーム</font>
+<HR ="1">
+	</head>
+	<body>
+<?php
+    //トランプ画像を$cardに用意する
+    $card=array("JK.png","01.png","02.png","03.png","04.png","05.png","06.png"
+    ,"07.png","08.png","09.png","10.png","11.png","12.png","13.png");
+    //mt_randを使ってランダムキーを取得
+    $rightCard=mt_rand(0,13);
+    //配列からランダムな要素を取得
+
+    echo"<img src=../cards/$card[$postDate1]>　　　";
+    echo"<img src=../cards/$card[$rightCard]><br><br>";
+
+    //ラジオボタンで選択した情報を画面に表示
+    echo"[$postDate2]を選択しました。"
+?>
+</body>
+</html>
+
+
